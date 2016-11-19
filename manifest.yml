@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: xwconversation
+  host: xwconversation
+  disk_quota: 1024M
+  services:
+  - Conversation-f8
+  - Speech to Text-in
+  - Text to Speech-a6
